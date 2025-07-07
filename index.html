@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Members - SOL.4CE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb, #fbc2eb, #a6c1ee);
+      background-size: 1200% 1200%;
+      animation: gradientBG 20s ease infinite;
+      color: #333;
+      overflow-x: hidden;
+    }@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #444;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav .active {
+  color: #a14dcf;
+  border-bottom: 2px solid #a14dcf;
+}
+
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.member-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
+.member-card img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.member-card h2 {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #5c3d99;
+}
+
+.member-card p {
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+  line-height: 1.5;
+}
+
+.member-card a {
+  color: #e156af;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.6);
+  margin-top: 2rem;
+  backdrop-filter: blur(4px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .member-card {
+    padding: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SOL.4CE Members</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="member.html" class="active">Member</a></li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>  <main>
+    <section class="member-list">
+      <div class="member-card">
+  <img src="harrisdebut.png" alt="Harris Caine">
+  <h2>Harris Caine</h2>
+  <p><strong>Deskripsi:</strong> VTuber dengan konten roleplay dan gaming.</p>
+  <p><strong>Tanggal Lahir:</strong> Sekitar bulan September</p>
+  <p><strong>Media Sosial:</strong></p>
+  <p>
+    <a href="https://www.youtube.com/@HarrisCaine">YouTube</a> | 
+    <a href="https://twitter.com/HarrisCainee">Twitter</a> | 
+    <a href="https://www.tiktok.com/@harriscaine">TikTok</a> | 
+    <a href="https://www.instagram.com/harriscainee">Instagram</a> | 
+    <a href="https://discord.gg/B9tCb6TDeW">Discord</a>
+  </p>
+</div>
+<div class="member-card">
+  <img src="soutadebut.png" alt="Souta Izumi">
+  <h2>Souta Izumi</h2>
+  <p><strong>Deskripsi:</strong> VTuber dengan konten gaming, free talk, dan cover lagu.</p>
+  <p><strong>Tanggal Lahir:</strong> 3 Februari</p>
+  <p><strong>Tanggal Debut:</strong> 7 April 2021</p>
+  <p><strong>Media Sosial:</strong></p>
+  <p>
+    <a href="https://www.youtube.com/@xSoutaa">YouTube</a> | 
+    <a href="https://twitter.com/xSouta_">Twitter</a> | 
+    <a href="https://www.instagram.com/xsoutaa/">Instagram</a> | 
+    <a href="https://www.tiktok.com/@xsoutaa">TikTok</a> | 
+    <a href="https://discord.gg/qCdxFSuQN7">Discord</a> | 
+    <a href="https://tako.id/Souta">Tako</a>
+  </p>
+</div>
+<div class="member-card">
+  <img src="gindebut.png" alt="Gin Gehenna">
+  <h2>Gin Gehenna</h2>
+  <p><strong>Deskripsi:</strong> VTuber yang sering streaming gaming dan ngobrol bareng fans.</p>
+  <p><strong>Tanggal Lahir:</strong> 12 Desember</p>
+  <p><strong>Tanggal Debut:</strong> Mei 2021</p>
+  <p><strong>Media Sosial:</strong></p>
+  <p>
+    <a href="https://www.youtube.com/@gingehenna">YouTube</a> | 
+    <a href="https://twitter.com/gingehenna">Twitter</a> | 
+    <a href="https://www.instagram.com/gingehenna/">Instagram</a>
+  </p>
+</div>
+<div class="member-card">
+  <img src="ariondebut.png" alt="Mikazuki Arion">
+  <h2>Mikazuki Arion</h2>
+  <p><strong>Deskripsi:</strong> VTuber dengan konten roleplay, ASMR, dan persona unik "Prime Minister, Primordial Demon".</p>
+  <p><strong>Tanggal Lahir:</strong> 1 September</p>
+  <p><strong>Tanggal Debut:</strong> 1 Juli 2023</p>
+  <p><strong>Media Sosial:</strong></p>
+  <p>
+    <a href="https://www.youtube.com/@MikazukiArion">YouTube</a> | 
+    <a href="https://twitter.com/MikazukiArion">Twitter</a>
+  </p>
+</div>
+    </section>
+  </main>  <footer>
+    <p>&copy; 2025 SOL.4CE. All rights reserved.</p>
+  </footer>  <script>
+    document.querySelectorAll('.member-card').forEach((el, i) => {
+      el.style.animationDelay = `${i * 0.2}s`;
+    });
+  </script></body>
+</html>
